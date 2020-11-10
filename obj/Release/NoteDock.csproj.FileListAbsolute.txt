@@ -1,0 +1,9 @@
+C:\Users\josti\source\repos\NoteDock\NoteDock\bin\Release\NoteDock.exe.config
+C:\Users\josti\source\repos\NoteDock\NoteDock\bin\Release\NoteDock.exe
+C:\Users\josti\source\repos\NoteDock\NoteDock\bin\Release\NoteDock.pdb
+C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.NoteDock.resources
+C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.Properties.Resources.resources
+C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.csproj.GenerateResource.cache
+C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.csproj.CoreCompileInputs.cache
+C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.exe
+C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.pdb
