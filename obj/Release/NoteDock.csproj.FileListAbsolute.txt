@@ -7,3 +7,4 @@ C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.csproj.Genera
 C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.csproj.CoreCompileInputs.cache
 C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.exe
 C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.pdb
+C:\Users\josti\source\repos\NoteDock\NoteDock\obj\Release\NoteDock.csprojAssemblyReference.cache

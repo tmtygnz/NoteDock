@@ -101,10 +101,6 @@ namespace NoteDock
 		{
 			saved = false;
 		}
-		public string getUserString()
-		{
-			return Note.Text;
-		}
 
 		private void NoteDock_FormClosing(object sender, FormClosingEventArgs e)
 		{
