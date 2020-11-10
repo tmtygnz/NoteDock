@@ -160,7 +160,7 @@
 			// 
 			this.loading.Name = "loading";
 			this.loading.Size = new System.Drawing.Size(100, 16);
-			this.loading.Step = 5;
+			this.loading.Step = 1;
 			// 
 			// FilePath
 			// 
@@ -173,6 +173,7 @@
 			this.aboutNoteDockToolStripMenuItem.Name = "aboutNoteDockToolStripMenuItem";
 			this.aboutNoteDockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.aboutNoteDockToolStripMenuItem.Text = "About Note Dock";
+			this.aboutNoteDockToolStripMenuItem.Click += new System.EventHandler(this.aboutNoteDockToolStripMenuItem_Click);
 			// 
 			// Note
 			// 
@@ -185,7 +186,6 @@
 			this.Note.Size = new System.Drawing.Size(800, 398);
 			this.Note.TabIndex = 4;
 			this.Note.Text = "";
-			this.Note.TextChanged += new System.EventHandler(this.Note_TextChanged);
 			// 
 			// NoteDock
 			// 
