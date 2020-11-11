@@ -37,15 +37,15 @@
 			this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.newToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveAsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.aboutNoteDockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.loading = new System.Windows.Forms.ToolStripProgressBar();
 			this.FilePath = new System.Windows.Forms.ToolStripStatusLabel();
-			this.aboutNoteDockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.Note = new System.Windows.Forms.RichTextBox();
 			this.contextMenuStrip1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -109,6 +109,34 @@
 			this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
 			this.fileToolStripMenuItem.Text = "File";
 			// 
+			// newToolStripMenuItem1
+			// 
+			this.newToolStripMenuItem1.Name = "newToolStripMenuItem1";
+			this.newToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+			this.newToolStripMenuItem1.Text = "New";
+			this.newToolStripMenuItem1.Click += new System.EventHandler(this.newToolStripMenuItem1_Click);
+			// 
+			// openToolStripMenuItem1
+			// 
+			this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
+			this.openToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+			this.openToolStripMenuItem1.Text = "Open";
+			this.openToolStripMenuItem1.Click += new System.EventHandler(this.openToolStripMenuItem1_Click);
+			// 
+			// saveToolStripMenuItem1
+			// 
+			this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+			this.saveToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+			this.saveToolStripMenuItem1.Text = "Save";
+			this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
+			// 
+			// saveAsToolStripMenuItem1
+			// 
+			this.saveAsToolStripMenuItem1.Name = "saveAsToolStripMenuItem1";
+			this.saveAsToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
+			this.saveAsToolStripMenuItem1.Text = "Save as";
+			this.saveAsToolStripMenuItem1.Click += new System.EventHandler(this.saveAsToolStripMenuItem1_Click);
+			// 
 			// helpToolStripMenuItem
 			// 
 			this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -117,33 +145,12 @@
 			this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
 			this.helpToolStripMenuItem.Text = "Help";
 			// 
-			// newToolStripMenuItem1
+			// aboutNoteDockToolStripMenuItem
 			// 
-			this.newToolStripMenuItem1.Name = "newToolStripMenuItem1";
-			this.newToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-			this.newToolStripMenuItem1.Text = "New";
-			this.newToolStripMenuItem1.Click += new System.EventHandler(this.newToolStripMenuItem1_Click);
-			// 
-			// openToolStripMenuItem1
-			// 
-			this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
-			this.openToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-			this.openToolStripMenuItem1.Text = "Open";
-			this.openToolStripMenuItem1.Click += new System.EventHandler(this.openToolStripMenuItem1_Click);
-			// 
-			// saveToolStripMenuItem1
-			// 
-			this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-			this.saveToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-			this.saveToolStripMenuItem1.Text = "Save";
-			this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
-			// 
-			// saveAsToolStripMenuItem1
-			// 
-			this.saveAsToolStripMenuItem1.Name = "saveAsToolStripMenuItem1";
-			this.saveAsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-			this.saveAsToolStripMenuItem1.Text = "Save as";
-			this.saveAsToolStripMenuItem1.Click += new System.EventHandler(this.saveAsToolStripMenuItem1_Click);
+			this.aboutNoteDockToolStripMenuItem.Name = "aboutNoteDockToolStripMenuItem";
+			this.aboutNoteDockToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+			this.aboutNoteDockToolStripMenuItem.Text = "About Note Dock";
+			this.aboutNoteDockToolStripMenuItem.Click += new System.EventHandler(this.aboutNoteDockToolStripMenuItem_Click);
 			// 
 			// statusStrip1
 			// 
@@ -168,13 +175,6 @@
 			this.FilePath.Size = new System.Drawing.Size(52, 17);
 			this.FilePath.Text = "New File";
 			// 
-			// aboutNoteDockToolStripMenuItem
-			// 
-			this.aboutNoteDockToolStripMenuItem.Name = "aboutNoteDockToolStripMenuItem";
-			this.aboutNoteDockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.aboutNoteDockToolStripMenuItem.Text = "About Note Dock";
-			this.aboutNoteDockToolStripMenuItem.Click += new System.EventHandler(this.aboutNoteDockToolStripMenuItem_Click);
-			// 
 			// Note
 			// 
 			this.Note.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -185,6 +185,7 @@
 			this.Note.Name = "Note";
 			this.Note.Size = new System.Drawing.Size(800, 398);
 			this.Note.TabIndex = 4;
+			this.Note.TabStop = false;
 			this.Note.Text = "";
 			// 
 			// NoteDock
