@@ -34,7 +34,6 @@ namespace NoteDock
 				write.Close();
 				loading.Value = 100;
 				FilePath.Text = path;
-				saved = true;
 				history = Note.Text;
 			}
 			loading.Value = 0;
@@ -73,7 +72,6 @@ namespace NoteDock
 					writer.Close();
 					loading.Value = 100;
 					FilePath.Text = path;
-					saved = true;
 					history = Note.Text;
 				}
 			}
@@ -85,7 +83,6 @@ namespace NoteDock
 				writer.Flush();
 				writer.Close();
 				loading.Value = 100;
-				saved = true;
 				history = Note.Text;
 			}
 			loading.Value = 0;
@@ -104,7 +101,6 @@ namespace NoteDock
 				writer.Close();
 				loading.Value = 100;
 				FilePath.Text = path;
-				saved = true;
 				history = Note.Text;
 			}
 			loading.Value = 0;
@@ -133,7 +129,6 @@ namespace NoteDock
 						writer.Close();
 						loading.Value = 100;
 						FilePath.Text = path;
-						saved = true;
 					}
 				}
 			}
