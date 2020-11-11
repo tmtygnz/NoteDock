@@ -2,7 +2,7 @@
 This is a simple text editor for day to day notes 🔥
 
 # Whats new in this release
-Well we added the option to save unsaved file if you hit close. And some minor improvements
+Bug fixes for better user experience!
 
 # Where to download?
 Go to the [release](https://github.com/jostimian/NoteDock/releases/) page of this repo and download the exe file 
