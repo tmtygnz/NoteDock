@@ -141,7 +141,7 @@ namespace NoteDock
 
 		private void aboutNoteDockToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("NoteDock V1.2", "About NoteDock");
+			MessageBox.Show("NoteDock Ver1.2-alpha", "About NoteDock");
 		}
 	}
 }
