@@ -6,10 +6,11 @@ Bug fixes for better user experience!
 
 # Where to download?
 Go to the [release](https://github.com/jostimian/NoteDock/releases/) page of this repo and download the exe file .
+**How to get latest features? ** again go to the [release](https://github.com/jostimian/NoteDock/releases/)  of this repo and download the alpha version **Note that alpha version is not stable**.
 
 # Running the file
 **Important note** make sure to click keep if chrome or your browser says NoteDock.exe may be a dangerous file after downloading double click the file to run.
 
 # What will be added ?
-- Font Changer.
-- Shortcut keys will be added as well.
+- Font Changer ✅done.
+- Shortcut keys will be added as well ⌨Doing!.
