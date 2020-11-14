@@ -111,7 +111,8 @@ namespace NoteDock
 			loading.Value = 25;
 			if (history != Note.Text)
 			{
-				Console.Beep(500, 500);
+				Console.Beep(500, 250);
+				Console.Beep(1000, 250);
 				string message = "Save All Changes?";
 				string title = "NoteDock";
 				MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -141,7 +142,21 @@ namespace NoteDock
 
 		private void aboutNoteDockToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("NoteDock Ver1.2-alpha", "About NoteDock");
+			MessageBox.Show("NoteDock Ver1.2.2-alpha", "About NoteDock");
+		}
+
+		private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			FontDialog fontDlg = new FontDialog();
+			fontDlg.ShowColor = true;
+			fontDlg.ShowApply = true;
+			fontDlg.ShowEffects = true;
+			fontDlg.ShowHelp = true;
+			if (fontDlg.ShowDialog() != DialogResult.Cancel)
+			{
+				Note.Font = fontDlg.Font;
+				Note.ForeColor = fontDlg.Color;
+			}
 		}
 	}
 }
