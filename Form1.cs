@@ -142,7 +142,7 @@ namespace NoteDock
 
 		private void aboutNoteDockToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("NoteDock Ver1.2.2-alpha", "About NoteDock");
+			MessageBox.Show("NoteDock Ver1.2.1-alpha", "About NoteDock");
 		}
 
 		private void fontToolStripMenuItem_Click(object sender, EventArgs e)
