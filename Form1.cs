@@ -158,5 +158,69 @@ namespace NoteDock
 				Note.ForeColor = fontDlg.Color;
 			}
 		}
+
+		private void NoteDock_Load(object sender, EventArgs e)
+		{
+			this.KeyPreview = true;
+		}
+
+		private void NoteDock_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.Control && e.KeyCode == Keys.S)       // Ctrl-S Save
+			{
+				SaveFileDialog save = new SaveFileDialog();
+				if (path == "")
+				{
+					if (save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+					{
+						path = save.FileName;
+						StreamWriter writer = new StreamWriter(File.Create(save.FileName));
+						writer.Write(Note.Text);
+						writer.Flush();
+						history = Note.Text;
+						writer.Close();
+					}
+				}
+				else
+				{
+					StreamWriter writer = new StreamWriter(File.Create(path));
+					writer.Write(Note.Text);
+					writer.Flush();
+					history = Note.Text;
+					writer.Close();
+				}
+				e.SuppressKeyPress = true;
+			}
+			else if (e.Control && e.KeyCode == Keys.O)
+			{
+				OpenFileDialog open = new OpenFileDialog();
+				if (open.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+				{
+					path = open.FileName;
+					StreamReader reader = new StreamReader(path);
+					string data = reader.ReadToEnd();
+					Note.Text = data;
+					reader.Close();
+					loading.Value = 100;
+					FilePath.Text = path;
+					history = Note.Text;
+				}
+				loading.Value = 0;
+				e.SuppressKeyPress = true;
+			}
+			else if (e.Control && e.KeyCode == Keys.N)
+			{
+				SaveFileDialog save = new SaveFileDialog();
+				if (save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+				{
+					path = save.FileName;
+					StreamWriter write = new StreamWriter(File.Create(path));
+					Note.Text = "";
+					write.Close();
+					FilePath.Text = path;
+					history = Note.Text;
+				}
+			}
+		}
 	}
 }

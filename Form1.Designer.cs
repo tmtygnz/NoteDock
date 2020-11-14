@@ -41,14 +41,14 @@
 			this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.saveAsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.aboutNoteDockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.loading = new System.Windows.Forms.ToolStripProgressBar();
 			this.FilePath = new System.Windows.Forms.ToolStripStatusLabel();
 			this.Note = new System.Windows.Forms.RichTextBox();
-			this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
 			this.contextMenuStrip1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
@@ -142,6 +142,21 @@
 			this.saveAsToolStripMenuItem1.Text = "Save as";
 			this.saveAsToolStripMenuItem1.Click += new System.EventHandler(this.saveAsToolStripMenuItem1_Click);
 			// 
+			// editToolStripMenuItem
+			// 
+			this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fontToolStripMenuItem});
+			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+			this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+			this.editToolStripMenuItem.Text = "Edit";
+			// 
+			// fontToolStripMenuItem
+			// 
+			this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
+			this.fontToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+			this.fontToolStripMenuItem.Text = "Font";
+			this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
+			// 
 			// helpToolStripMenuItem
 			// 
 			this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -153,7 +168,7 @@
 			// aboutNoteDockToolStripMenuItem
 			// 
 			this.aboutNoteDockToolStripMenuItem.Name = "aboutNoteDockToolStripMenuItem";
-			this.aboutNoteDockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.aboutNoteDockToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
 			this.aboutNoteDockToolStripMenuItem.Text = "About Note Dock";
 			this.aboutNoteDockToolStripMenuItem.Click += new System.EventHandler(this.aboutNoteDockToolStripMenuItem_Click);
 			// 
@@ -193,21 +208,6 @@
 			this.Note.TabStop = false;
 			this.Note.Text = "";
 			// 
-			// editToolStripMenuItem
-			// 
-			this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fontToolStripMenuItem});
-			this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-			this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-			this.editToolStripMenuItem.Text = "Edit";
-			// 
-			// fontToolStripMenuItem
-			// 
-			this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-			this.fontToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.fontToolStripMenuItem.Text = "Font";
-			this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
-			// 
 			// errorProvider1
 			// 
 			this.errorProvider1.ContainerControl = this;
@@ -225,6 +225,8 @@
 			this.Name = "NoteDock";
 			this.Text = "NoteDock";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NoteDock_FormClosing);
+			this.Load += new System.EventHandler(this.NoteDock_Load);
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NoteDock_KeyDown);
 			this.contextMenuStrip1.ResumeLayout(false);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
